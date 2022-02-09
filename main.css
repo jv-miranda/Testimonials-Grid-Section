@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 0.85rem;
+}
+
+:root {
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body {
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin: 8% 10%;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+    "testimonial-01 testimonial-01 testimonial-02 testimonial-05"
+    "testimonial-03 testimonial-04 testimonial-04 testimonial-05"
+    ;
+
+    grid-gap: 32px;
+}
+
+.testimonial {
+    border-radius: 10px;
+    padding: 20px 25px;
+}
+
+/* TESTIMONIAL ID */
+.testimonial-id {
+    display: flex;
+    color: var(--white);
+    margin-bottom: 12px;
+}
+
+.testimonial-id-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 12px;
+    border: solid 2px rgba(255,255,255,0.5);
+}
+
+.testimonial-id-name {
+    margin-bottom: 2px;
+}
+
+.testimonial-id-tag {
+    opacity: 50%;
+}
+
+/* TESTIMONIAL HEADING */
+.testimonial-heading {
+    font-size: 1.438rem;
+    color: var(--white);
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* TESTIMONIAL FOOTER */
+.testimonial-footer {
+    color: rgba(255,255,255,0.5);
+    line-height: 20px;
+    font-weight: 500;
+}
+
+#testimonial-01 {
+    grid-area: testimonial-01;
+    
+    background-color: var(--moderate-violet);
+    background-image: url(images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+
+    background-position: 80% 0px;
+}
+
+#testimonial-02 {
+    grid-area: testimonial-02;
+    background-color: var(--very-dark-grayish-blue);
+}
+
+#testimonial-03 {
+    grid-area: testimonial-03;
+    background-color: var(--white);
+}
+
+#testimonial-04 {
+    grid-area: testimonial-04;
+    background-color: var(--very-dark-blackish-blue);
+}
+
+#testimonial-05 {
+    grid-area: testimonial-05;
+    background-color: var(--white);
+}
+
+#testimonial-05-id-name, #testimonial-05-id-tag, #testimonial-05-heading, #testimonial-05-footer, #testimonial-03-id-name, #testimonial-03-id-tag, #testimonial-03-heading, #testimonial-03-footer {
+    color: var(--very-dark-blackish-blue);
+}
+
+#testimonial-03-footer, #testimonial-05-footer {
+    opacity: 70%;
+}
