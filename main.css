@@ -117,3 +117,48 @@ section {
 #testimonial-03-footer, #testimonial-05-footer {
     opacity: 70%;
 }
+
+@media (max-width: 1169px) {
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.6fr;
+    
+        grid-template-areas:
+        "testimonial-01 testimonial-01 testimonial-02"
+        "testimonial-03 testimonial-04 testimonial-04"
+        "testimonial-05 testimonial-05 testimonial-05"
+        ;
+    }
+}
+
+@media (max-width: 724px) {
+    section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 0.6fr 0.6fr;
+
+        grid-template-areas:
+        "testimonial-01 testimonial-04"
+        "testimonial-03 testimonial-02"
+        "testimonial-05 testimonial-05"
+        ;
+    }
+
+    .testimonial-footer {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 0.4fr 0.4fr 0.7fr 1fr;
+
+        grid-template-areas:
+        "testimonial-01"
+        "testimonial-02"
+        "testimonial-03"
+        "testimonial-04"
+        "testimonial-05"
+        ;
+    }
+}
