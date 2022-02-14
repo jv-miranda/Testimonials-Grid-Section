@@ -98,6 +98,8 @@ section {
 #testimonial-03 {
     grid-area: testimonial-03;
     background-color: var(--white);
+    -webkit-box-shadow: 8px 5px 15px 4px rgba(177,177,177,0.48); 
+    box-shadow: 8px 5px 15px 4px rgba(177,177,177,0.48);
 }
 
 #testimonial-04 {
@@ -108,6 +110,8 @@ section {
 #testimonial-05 {
     grid-area: testimonial-05;
     background-color: var(--white);
+    -webkit-box-shadow: 8px 5px 15px 4px rgba(177,177,177,0.48); 
+    box-shadow: 8px 5px 15px 4px rgba(177,177,177,0.48);
 }
 
 #testimonial-05-id-name, #testimonial-05-id-tag, #testimonial-05-heading, #testimonial-05-footer, #testimonial-03-id-name, #testimonial-03-id-tag, #testimonial-03-heading, #testimonial-03-footer {
